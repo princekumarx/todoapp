@@ -1,6 +1,8 @@
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors');
  var bodypa = bodyParser.json();
+
 
  mongoose.connect('mongodb+srv://test:test@cluster0-hrbsy.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true});
  //schema
