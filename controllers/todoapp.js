@@ -31,6 +31,7 @@ module.exports = (app)=>{
 //         item:'get cats' }
 // ]
 app.use(bodyParser.json());
+app.use(cors());
     app.get('/',(req,res)=>{
  Todo.find({},(err,data)=>{
      if(err) throw err;
